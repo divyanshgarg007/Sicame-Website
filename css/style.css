@@ -1,0 +1,586 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	background-color: #fff;
+	font-family: 'Metropolis', sans-serif;
+}
+
+.btn:focus {
+	box-shadow: none !important;
+}
+
+/* .h-full {
+	height: 100%;
+} */
+
+.main {
+    border: 5px solid #fff;
+	transition: 1s;
+}
+.main-row {
+	padding: 30px;
+	background-color: #EAEAEF;
+}
+
+.left_panel .logo img {
+	width: 100%;
+}
+
+.right_panel {
+	background: #253A68;
+	border-radius: 16px;
+	padding: 70px 100px;
+	transition: 1s;
+	height: 100%;
+}
+
+.right_panel .main_banner {
+	width: 60%;
+	margin: auto;
+}
+
+.right_panel .main_banner img {
+	width: 100%;
+}
+
+.right_panel h6 {
+	font-size: 26px;
+	line-height: 32px;
+	font-weight: 600;
+	color: #F5F6F7;
+}
+
+ul.accordion-list {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 0px;
+	margin: 0;
+	list-style: none;
+}
+
+ul.accordion-list li {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0 auto 15px auto;
+	cursor: pointer;
+}
+
+ul.accordion-list li .accordion-heading {
+	display: flex;
+	align-items: center;
+	padding: 15px 15px;
+	height: 60px;
+}
+
+ul.accordion-list li .accordion-heading svg {
+	width: 95px;
+}
+
+ul.accordion-list li.active h3:after {
+	transform: rotate(180deg);
+	top: -1px;
+}
+
+ul.accordion-list li h3 {
+	font-weight: 500;
+	color: #B2B0B0;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 0 0 0 0;
+	margin: 0;
+	font-size: 16px;
+	line-height: 16px;
+	cursor: pointer;
+}
+
+ul.accordion-list li h3:after {
+	content: "\f107";
+	font-family: "FontAwesome";
+	position: absolute;
+	right: 0;
+	top: -1px;
+	color: #B2B0B0;
+	transition: all 0.3s ease-in-out;
+	font-size: 24px;
+}
+
+ul.accordion-list li div.accordion-content {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	padding: 15px 30px 15px 50px;
+
+}
+
+ul.accordion-list li div.accordion-content p {
+	position: relative;
+	display: block;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+	color: #B2B0B0;
+}
+
+.btn-visit {
+	text-decoration: underline;
+	color: #333333;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+	border-radius: 15px;
+	background-color: transparent;
+}
+
+.progress-bar-custom {
+	position: absolute;
+	left: 50%;
+	width: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.progress-bar-custom .main-logo {
+	width: 100%;
+	margin: auto;
+}
+
+.progress-bar-custom .main-logo img {
+	width: 100%;
+}
+
+.progress {
+	background: rgba(255, 255, 255, 0.1);
+	justify-content: flex-start;
+	border-radius: 100px;
+	align-items: center;
+	position: relative;
+	padding: 0 5px;
+	display: flex;
+	height: 10px;
+	width: 70%;
+	margin: auto;
+}
+
+.progress-value {
+	animation: load 3s normal forwards;
+	box-shadow: 0 10px 40px -10px #fff;
+	border-radius: 100px;
+	background: #66C4D6;
+	height: 10px;
+	width: 0;
+}
+
+@keyframes load {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 100%;
+	}
+}
+
+.accordion-list li .list-one:hover {
+	background: rgba(247, 199, 81, 0.12);
+	border-radius: 6px;
+}
+
+.accordion-list li.active .list-one {
+	background: rgba(247, 199, 81, 0.12);
+	border-radius: 6px;
+}
+
+.accordion-list li.active .list-one h3 {
+	color: #f7c751;
+}
+
+.accordion-list li.active .list-one svg path {
+	fill: #f7c751;
+}
+
+.accordion-list li.active .list-one h3:after {
+	color: #f7c751;
+}
+
+.accordion-list li.active .list-one-content .btn-visit:hover {
+	background-color: #f7c751;
+	text-decoration: none;
+	color: #fff;
+}
+
+.active-one {
+	border: 5px solid #f7c751;
+    transition: 1s;
+}
+.accordion-list li.active .list-one:after {
+    content: "";
+    width: 16px;
+    background: #f7c751;
+    height: 42px;
+    position: absolute;
+    left: -37px;
+    border-radius: 28px;
+    transition: 2s;
+}
+
+.active-one .right_panel {
+	background: url(../images/one.jpg);
+	transition: 1s;
+	background-size: cover;
+	height: 100%!important;
+	padding: 0px;
+}
+
+.active-one .right_panel h6, .active-one .right_panel .main_banner {
+display: none;
+}
+
+.accordion-list li .list-two:hover {
+	background: rgba(51, 186, 209, 0.12);
+	border-radius: 6px;
+}
+
+.accordion-list li.active .list-two {
+	background: rgba(51, 186, 209, 0.12);
+	border-radius: 6px;
+}
+
+.accordion-list li.active .list-two h3 {
+	color: #33bad1;
+}
+
+.accordion-list li.active .list-two svg path {
+	fill: #33bad1;
+}
+
+.accordion-list li.active .list-two h3:after {
+	color: #33bad1;
+}
+
+.accordion-list li.active .list-two-content .btn-visit:hover {
+	background-color: #33bad1;
+	text-decoration: none;
+	color: #fff;
+}
+
+.active-two {
+	border: 5px solid #33bad1;
+    transition: 1s;
+}
+
+.accordion-list li.active .list-two:after {
+    content: "";
+    width: 16px;
+    background: #33bad1;
+    height: 42px;
+    position: absolute;
+    left: -37px;
+    border-radius: 28px;
+    transition: 2s;
+}
+
+.active-two .right_panel {
+	background: url(../images/two.jpg);
+	transition: 1s;
+	background-size: cover;
+	height: 100%!important;
+	padding: 0px;
+}
+
+.active-two .right_panel h6, .active-two .right_panel .main_banner {
+display: none;
+}
+
+.accordion-list li .list-three:hover {
+	background: rgba(69, 144, 206, 0.12);
+	border-radius: 6px;
+}
+
+.accordion-list li.active .list-three {
+	background: rgba(69, 144, 206, 0.12);
+	border-radius: 6px;
+}
+
+.accordion-list li.active .list-three h3 {
+	color: #4590ce;
+}
+
+.accordion-list li.active .list-three svg path {
+	fill: #4590ce;
+}
+
+.accordion-list li.active .list-three h3:after {
+	color: #4590ce;
+}
+
+.accordion-list li.active .list-three-content .btn-visit:hover {
+	background-color: #4590ce;
+	text-decoration: none;
+	color: #fff;
+}
+
+.active-three {
+	border: 5px solid #4590ce;
+    transition: 1s;
+}
+
+.accordion-list li.active .list-three:after {
+    content: "";
+    width: 16px;
+    background: #4590ce;
+    height: 42px;
+    position: absolute;
+    left: -37px;
+    border-radius: 28px;
+    transition: 2s;
+}
+
+.active-three .right_panel {
+	background: url(../images/three.jpg);
+	transition: 1s;
+	background-size: cover;
+	height: 100%!important;
+	padding: 0px;
+}
+
+.active-three .right_panel h6, .active-three .right_panel .main_banner {
+display: none;
+}
+
+.accordion-list li .list-four:hover {
+	background: rgba(151, 205, 173, 0.12);
+	border-radius: 6px;
+}
+
+.accordion-list li.active .list-four {
+	background: rgba(151, 205, 173, 0.12);
+	border-radius: 6px;
+}
+
+.accordion-list li.active .list-four h3 {
+	color: #97cdad;
+}
+
+.accordion-list li.active .list-four svg path {
+	fill: #97cdad;
+}
+
+.accordion-list li.active .list-four h3:after {
+	color: #97cdad;
+}
+
+.accordion-list li.active .list-four-content .btn-visit:hover {
+	background-color: #97cdad;
+	text-decoration: none;
+	color: #fff;
+}
+
+.active-four {
+	border: 5px solid #97cdad;
+    transition: 1s;
+}
+
+.accordion-list li.active .list-four:after {
+    content: "";
+    width: 16px;
+    background: #97cdad;
+    height: 42px;
+    position: absolute;
+    left: -37px;
+    border-radius: 28px;
+    transition: 2s;
+}
+
+.active-four .right_panel {
+	background: url(../images/four.jpg);
+	transition: 1s;
+	background-size: cover;
+	height: 100%!important;
+	padding: 0px;
+}
+
+.active-four .right_panel h6, .active-four .right_panel .main_banner {
+display: none;
+}
+
+.accordion-list li .list-five:hover {
+	background: rgba(94, 177, 153, 0.12);
+	border-radius: 6px;
+}
+
+.accordion-list li.active .list-five {
+	background: rgba(94, 177, 153, 0.12);
+	border-radius: 6px;
+}
+
+.accordion-list li.active .list-five h3 {
+	color: #5eb199;
+}
+
+.accordion-list li.active .list-five svg path {
+	fill: #5eb199;
+}
+
+.accordion-list li.active .list-five h3:after {
+	color: #5eb199;
+}
+
+.accordion-list li.active .list-five-content .btn-visit:hover {
+	background-color: #5eb199;
+	text-decoration: none;
+	color: #fff;
+}
+
+.active-five {
+	border: 5px solid #5eb199;
+    transition: 1s;
+}
+
+.accordion-list li.active .list-five:after {
+    content: "";
+    width: 16px;
+    background: #5eb199;
+    height: 42px;
+    position: absolute;
+    left: -37px;
+    border-radius: 28px;
+    transition: 2s;
+}
+
+.active-five .right_panel {
+	background: url(../images/five.jpg);
+	transition: 1s;
+	background-size: cover;
+	height: 100%!important;
+	padding: 0px;
+}
+
+.active-five .right_panel h6, .active-five .right_panel .main_banner {
+display: none;
+}
+
+.accordion-list li .list-six:hover {
+	background: rgba(99, 95, 167, 0.12);
+	border-radius: 6px;
+}
+
+.accordion-list li.active .list-six {
+	background: rgba(99, 95, 167, 0.12);
+	border-radius: 6px;
+}
+
+.accordion-list li.active .list-six h3 {
+	color: #635fa7;
+}
+
+.accordion-list li.active .list-six svg path {
+	fill: #635fa7;
+}
+
+.accordion-list li.active .list-six h3:after {
+	color: #635fa7;
+}
+
+.accordion-list li.active .list-six-content .btn-visit:hover {
+	background-color: #635fa7;
+	text-decoration: none;
+	color: #fff;
+}
+
+.active-six {
+	border: 5px solid #635fa7;
+    transition: 2s;
+}
+
+.accordion-list li.active .list-six:after {
+    content: "";
+    width: 16px;
+    background: #635fa7;
+    height: 42px;
+    position: absolute;
+    left: -37px;
+    border-radius: 28px;
+    transition: 1s;
+}
+
+.active-six .right_panel {
+	background: url(../images/six.jpg);
+	transition: 1s;
+	background-size: cover;
+	height: 100%!important;
+	padding: 0px;
+}
+
+.active-six .right_panel h6, .active-six .right_panel .main_banner {
+display: none;
+}
+
+.accordion-list li .list-seven:hover {
+	background: rgba(25, 74, 145, 0.12);
+	border-radius: 6px;
+}
+
+.accordion-list li.active .list-seven {
+	background: rgba(25, 74, 145, 0.12);
+	border-radius: 6px;
+}
+
+.accordion-list li.active .list-seven h3 {
+	color: #194a91;
+}
+
+.accordion-list li.active .list-seven svg path {
+	fill: #194a91;
+}
+
+.accordion-list li.active .list-seven h3:after {
+	color: #194a91;
+}
+
+.accordion-list li.active .list-seven-content .btn-visit:hover {
+	background-color: #194a91;
+	text-decoration: none;
+	color: #fff;
+}
+
+.active-seven {
+	border: 5px solid #194a91;
+    transition: 1s;
+}
+
+.accordion-list li.active .list-seven:after {
+    content: "";
+    width: 16px;
+    background: #194a91;
+    height: 42px;
+    position: absolute;
+    left: -37px;
+    border-radius: 28px;
+    transition: 2s;
+}
+
+.active-seven .right_panel {
+	background: url(../images/seven.jpg);
+	transition: 1s;
+	background-size: cover;
+	height: 100%!important;
+	padding: 0px;
+}
+
+.active-seven .right_panel h6, .active-seven .right_panel .main_banner {
+display: none;
+}
